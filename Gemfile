@@ -9,14 +9,20 @@ gem 'puma', '~> 3.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 3.0'
 gem 'jquery-rails'
+gem 'turbolinks'
 gem 'pry'
 gem 'slim-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platform: :mri
   gem 'reek', require: false
   gem 'rubocop', require: false
+end
+
+group :test do
+  gem 'rails-controller-testing'
 end
 
 group :development do
